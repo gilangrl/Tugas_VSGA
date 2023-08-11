@@ -1,4 +1,4 @@
-@extends('master.index')
+@extends('halamanDepan.index')
 
 @section('aboutUs')
 <style>

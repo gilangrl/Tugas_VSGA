@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Artikel;
 
 class ArtikelController extends Controller
-{
+{   
     public function index()
     {
         $data = Artikel::all();
@@ -58,4 +58,5 @@ class ArtikelController extends Controller
         // dd($data);
         return redirect()->route('artikel');
     }
+
 }

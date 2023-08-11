@@ -78,4 +78,5 @@ class GalleryController extends Controller
         $data = Gallery::all();
         return view('klienKami.index', compact('data'));
     }
+
 }

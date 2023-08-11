@@ -19,23 +19,24 @@
         </div>
         <ul class="nav flex-column mt-5">
           <li class="nav-item">
-            <a class="nav-link text-dark" href="{{route('artikel')}}">Artikel</a>
+            <a class="nav-link text-dark" href="{{route('artikelUser')}}">Artikel</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-dark" href="{{route('event')}}">Event</a>
+            <a class="nav-link text-dark" href="{{route('eventUser')}}">Event</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-dark" href="{{route('gallery')}}">Galery Foto</a>
+            <a class="nav-link text-dark" href="{{route('galleryUser')}}">Galery Foto</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-dark" href="{{route('indexKlien')}}">Klien Kami</a>
+            <a class="nav-link text-dark" href="{{route('halamnDepanKlien')}}">Klien Kami</a>
           </li>
           <li class="nav-item dropdown ">
             <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Login
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
-              <li><a class="dropdown-item" href="{{route('logout')}}">Logout</a></li>
+              <li><a class="dropdown-item" href="/login">Sign In</a></li>
+              <li><a class="dropdown-item" href="#">Sign Up</a></li>
             </ul>
           </li>
         </ul>
@@ -46,13 +47,13 @@
       <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
         <div class="container-fluid mt-4">
           <h1 class="text-center">Elite Motor Enthusiasts</h1>
-          <!-- <nav class="navbar navbar-expand-md navbar-dark justify-content-center">
+          <nav class="navbar navbar-expand-md navbar-dark justify-content-center">
             <ul class="navbar-nav">
               <li class="nav-item">
                 <a class="nav-link  text-dark ms-5" href="/home">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link  text-dark ms-5" href="#">Profile</a>
+                <a class="nav-link  text-dark ms-5" href="">Profile</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link  text-dark ms-5" href="/visi">Visi dan Misi</a>
@@ -67,24 +68,18 @@
                 <a class="nav-link  text-dark ms-5" href="/about">About Us</a>
               </li>
             </ul>
-          </nav> -->
+          </nav>
           <div class="content">
-
-
-
             @yield('artikel')
-            @yield('tambahArtikel')
-            @yield('editArtikel')
-
             @yield('event')
-            @yield('tambahEvent')
-            @yield('editEvent')
-
             @yield('gallery')
-            @yield('tambahGallery')
-            @yield('editGallery')
-
             @yield('klien')
+
+            @yield('home')
+            @yield('visi_misi')
+            @yield('produk')
+            @yield('kontak_kami')
+            @yield('aboutUs')
           </div>
         </div>
       </main>

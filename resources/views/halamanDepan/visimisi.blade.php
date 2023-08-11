@@ -1,4 +1,4 @@
-@extends('master.index')
+@extends('halamanDepan.index')
 
 @section('visi_misi')
 	<div class="row mt-5">
