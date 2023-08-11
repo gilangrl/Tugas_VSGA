@@ -37,7 +37,9 @@ Route::get('/about', function () {
     return view('halamanDepan.aboutUs');
 });
 
-
+Route::get('/profile', function () {
+    return view('halamanDepan.profile');
+});
 
 Route::get('/', function () {
     return view('halamanDepan.index');
@@ -55,7 +57,8 @@ Route::post('/masuk', [LoginController::class, 'login'])->name('masuk');
 
 Route::get('logout', [LoginController::class, 'logout'])->name('logout');
 
-
+Route::get('/register', [LoginController::class, 'register']);
+Route::post('/daftar', [LoginController::class, 'formReg'])->name('daftar');
 
 
 // ARTIKEL

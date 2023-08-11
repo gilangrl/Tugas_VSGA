@@ -36,7 +36,7 @@
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
               <li><a class="dropdown-item" href="/login">Sign In</a></li>
-              <li><a class="dropdown-item" href="#">Sign Up</a></li>
+              <li><a class="dropdown-item" href="/register">Sign Up</a></li>
             </ul>
           </li>
         </ul>
@@ -53,7 +53,7 @@
                 <a class="nav-link  text-dark ms-5" href="/home">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link  text-dark ms-5" href="">Profile</a>
+                <a class="nav-link  text-dark ms-5" href="/profile">Profile</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link  text-dark ms-5" href="/visi">Visi dan Misi</a>
@@ -80,6 +80,7 @@
             @yield('produk')
             @yield('kontak_kami')
             @yield('aboutUs')
+            @yield('profil')
           </div>
         </div>
       </main>
@@ -91,6 +92,6 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </body>
 </html>

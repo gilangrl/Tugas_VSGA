@@ -45,4 +45,28 @@ class LoginController extends Controller
         Auth::logout();
         return redirect('/');
     }
+
+    public function register()
+    {
+        return view('auth.register');
+    }
+
+    public function formReg(Request $request)
+    {
+        $data = $request->validate([
+            'name' => 'required|max:191',
+            'email' => 'required|email',
+            'password' => 'required|min:6',
+        ],
+        [
+            'email.required' => 'Email Wajib Diisi',
+            'password.min' => 'Password Minimal 6 Karakter',
+        ]);
+
+        $data['password'] = bcrypt($data['password']);
+
+        User::create($data);
+        // dd($data);
+        return redirect('/login');
+    }
 }
